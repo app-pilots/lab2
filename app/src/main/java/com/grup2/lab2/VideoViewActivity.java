@@ -19,6 +19,7 @@ public class  VideoViewActivity extends AppCompatActivity {
         videoView=(VideoView)findViewById(R.id.videoView);
         videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.bienvenidos));
         videoView.start();
+        //nue
 
 
     }
