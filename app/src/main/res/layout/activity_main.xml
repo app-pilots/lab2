@@ -11,6 +11,7 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btnVideo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
@@ -20,6 +21,7 @@
         android:textStyle="bold" />
 
     <Button
+        android:id="@+id/btnCalendario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
@@ -29,6 +31,7 @@
         android:textStyle="bold" />
 
     <Button
+        android:id="@+id/btnMapa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
@@ -39,6 +42,7 @@
 
 
     <Button
+        android:id="@+id/btnGraficoLineal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
@@ -48,6 +52,7 @@
         android:textStyle="bold" />
 
     <Button
+        android:id="@+id/btnMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
