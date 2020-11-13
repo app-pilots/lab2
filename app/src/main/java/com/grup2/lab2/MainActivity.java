@@ -40,11 +40,7 @@ public class MainActivity extends AppCompatActivity  {
 
     }
 
-    public void abrirMenu(View v){
-        Intent menu= new Intent(this,MainActivity2.class);
-        startActivity(menu);
 
-    }
 
 
 }
