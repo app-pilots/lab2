@@ -1,70 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_vertical"
-    android:orientation="vertical"
-    android:paddingStart="36dp"
-    android:paddingEnd="36dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnVideo"
-        android:layout_width="match_parent"
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/menuFab"
+        android:layout_width="wrap_content"
+        android:layout_height="464dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="104dp"
+        app:fab_addButtonColorNormal="@color/design_default_color_primary"
+        app:fab_addButtonColorPressed="@color/design_default_color_primary_dark"
+        app:fab_labelStyle="@drawable/fondo_eti_fab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="abrirCalendario"
+            app:fab_colorNormal="?attr/colorAccent"
+            app:fab_icon="@android:drawable/ic_menu_my_calendar"
+            app:fab_size="mini"
+            app:fab_title="Boton Calendario" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnVideoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="abrirVideo"
+            app:fab_colorNormal="@color/purple_200"
+            app:fab_icon="@android:drawable/ic_menu_slideshow"
+            app:fab_size="mini"
+            app:fab_title="Boton Video" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/cardview_light_background"
+            app:fab_icon="@android:drawable/ic_dialog_map"
+            app:fab_size="mini"
+            app:fab_title="Boton Mapa" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnGrafico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/design_default_color_secondary_variant"
+            app:fab_icon="@android:drawable/spinner_background"
+            app:fab_size="mini"
+            app:fab_title="Boton Grafico" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="abrirVideo"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:text="Video YouTube"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btnCalendario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="abrirCalendario"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:text="Calendario"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btnMapa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="abrirMapa"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:text="Mapa"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:text="Laboratorio 2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="30dp" />
 
 
-    <Button
-        android:id="@+id/btnGraficoLineal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="abrirGrafico"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:text="Gráfico Lineal"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btnMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="abrirMenu"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:text="Menú "
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
