@@ -47,10 +47,12 @@
             app:fab_colorNormal="@color/cardview_light_background"
             app:fab_icon="@android:drawable/ic_dialog_map"
             app:fab_size="mini"
+            android:onClick="abrirMapa"
             app:fab_title="Boton Mapa" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnGrafico"
+            android:onClick="abrirGrafico"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fab_colorNormal="@color/design_default_color_secondary_variant"

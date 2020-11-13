@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity  {
-    Button btnVideo,btnCalendario,btnMapa,btnGraficoLineal;
+public class MainActivity extends AppCompatActivity {
+    Button btnVideo, btnCalendario, btnMapa, btnGraficoLineal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,31 +16,31 @@ public class MainActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
 
 
-
-
         //primer commmite Roberto Valarezo
     }
-    public void abrirVideo(View v){
-    Intent video= new Intent(this,VideoViewActivity.class);
-    startActivity(video);
+
+    public void abrirVideo(View v) {
+        Intent video = new Intent(this, VideoViewActivity.class);
+        startActivity(video);
 
 
     }
-    public void abrirCalendario(View v){
-        Intent calendario= new Intent(this,CalendarActivity.class);
+
+    public void abrirCalendario(View v) {
+        Intent calendario = new Intent(this, CalendarActivity.class);
         startActivity(calendario);
 
     }
 
-    public void abrirMapa(View v){
-
+    public void abrirMapa(View v) {
+        Intent intent = new Intent(this, MapActivity.class);
+        startActivity(intent);
     }
 
-    public void abrirGrafico(View v){
-
+    public void abrirGrafico(View v) {
+        Intent intent = new Intent(this, GraficoActivity.class);
+        startActivity(intent);
     }
-
-
 
 
 }
