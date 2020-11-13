@@ -8,17 +8,13 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity  {
-    Button btnVideo,btnCalendario,btnMapa,btnGraficoLineal,btnMenu;
+    Button btnVideo,btnCalendario,btnMapa,btnGraficoLineal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnVideo=(Button)findViewById(R.id.btnVideo);
-        btnCalendario=(Button)findViewById(R.id.btnCalendario);
-        btnGraficoLineal=(Button)findViewById(R.id.btnGraficoLineal);
-        btnMenu=(Button)findViewById(R.id.btnMenu);
-        btnMapa=(Button)findViewById(R.id.btnMapa);
+
 
 
 
